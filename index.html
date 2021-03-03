@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel With Azad</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Teavel</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="videos.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Travel with Azad</h2>
+        <h3>Discover A New Place</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
+          veniam aspernatur et eligendi ipsam ad. Vero, illo. Inventore
+          excepturi perferendis animi, beatae quo assumenda iste nihil
+          explicabo, esse perspiciatis modi?
+        </p>
+        <a href="#">Discover</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/AbidAzadT/">
+            <img src="facebook.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/abid-azad-tamal-92502a204"
+            ><img src="linkedin.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/azad_tamal?igshid=ay1khes8694q"
+            ><img src="instagram.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
